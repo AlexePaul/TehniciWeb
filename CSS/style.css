@@ -10,13 +10,20 @@ footer{
 section.country{
 	padding-right: 100px;
 }
+figure{
+	margin:  0;
+}
 
+figure picture img{
+	width: 100%;
+}
 .container{
 display: grid;
 width: 95%;
 margin: auto;
 grid-template-areas: 
-"z-usa z-germany";
+"z-usa z-germany"
+"z-japan z-romania";
 grid-template-columns: 1fr 1fr;
 }
 
@@ -32,8 +39,15 @@ ul.menu ul{
 	right: var(--menu-border-size);
 }
 
+#romania{
+	grid-area: z-romania;
+}
+
 #usa{
 	grid-area: z-usa;
+}
+#japan{
+	grid-area: z-japan;
 }
 #Germany{
 	grid-area: z-germany;
@@ -124,8 +138,4 @@ ul.menu li:hover{
 
 ul.menu li:hover{
 	font-size: 1.1em;
-}
-
-@keyframes menu_animation{
-	
 }   
