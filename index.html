@@ -1,94 +1,172 @@
 <!DOCTYPE html>
 <html lang = "en" id = "mainTop">
   <head>
-      <meta charset ="UTF-8">
-      <meta name ="keywords" content="masini, motoare, bmw, mercedes, dodge">
-      <meta name = "description" content ="Un site despre masini cu motoare puternice de la diferiti producatori precum bmw, mercedes sau dodge">
-      <meta name = "author" content ="Alexe Paul">
-      <title>CarStats</title>
-      <!--Favicon-->
+    <meta charset ="UTF-8">
+    <meta name ="keywords" content="masini, motoare, bmw, mercedes, dodge">
+    <meta name = "description" content ="Un site despre masini cu motoare puternice de la diferiti producatori precum bmw, mercedes sau dodge">
+    <meta name = "author" content ="Alexe Paul">
+
+    <title>CarStats</title>
+    <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="Assets/ico/apple-touch-icon.png">
-   	<link rel="icon" type="image/png" sizes="32x32" href="Assets/ico/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="Assets/ico/favicon-16x16.png">
-	<link rel="manifest" href="Assets/ico/site.webmanifest">
-	<link rel="mask-icon" href="Assets/ico/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="Assets/ico/favicon.ico">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="msapplication-config" content="Assets/ico/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-  
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="Assets/ico/site.webmanifest">
+    <link rel="mask-icon" href="Assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="Assets/ico/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="Assets/ico/browserconfig.xml">
+    <link rel="stylesheet" href="./CSS/style.css">    
+    <meta name="theme-color" content="#ffffff"> 
   </head>
-  <body>
+  
+  <body style = "background-color: #6E213E">
+    
     <header>
-      <h1>Titlul paginii</h1>
+      <h1 style = "color: white">Car Stats</h1>
       <nav>
-        <ul>
-          <li>
-            <div>Country:</div>
+        <input type="checkbox", id="chk-menu", style="display:none">
+        <label id = "labelCheckbox" for="chk-menu"><img src = "./Assets/Images/Hamburger_icon_alb.png", style = "width:50px; height:50px"></label>
+        <ul class="menu">
+          <li><a href = "index.html">acasa</a></li>
+          <li>Tara
             <ul>
-              <li><a href ="#s1">USA</a></li>
-              <li><a href ="#s2">Germany</a></li>
-              <li><a href =""></a></li>
+              <li><a href ="#usa">USA</a></li>
+              <li><a href ="#Germany">Germania</a></li>
+              <li><a href ="#Japan">japonia</a></li>
             </ul>
           </li>
-          <li><a href="pagina1.html"></a></li>
-          <li><a href = "pagina2.html"></a></li>
-          <li><a href = "pagina3.html"></a></li>
+          <li><a href = "pagina2.html">pagina2</a></li>
+          <li><a href = "pagina3.html">pagina3</a></li>
         </ul>
       </nav>
     </header>
+    
     <main>
-      <section id="s1">
-        <h2>USA</h2>
-       	<a href = https://www.youtube.com/embed/KTYVwEgl59Y target = "1iframe"> First Video:</a>
-       	<a href = https://www.youtube.com/embed/gUuzOvx6M7o target = "1iframe"> Second Video:</a>
-        <iframe width="560" height="315" name = "1iframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-        <a href = https://www.hotcars.com/fastest-american-cars-ever/> An article about the fastest production cars in the USA<a>
-        <a href = "./Assets/Images/Camaro.jpeg" download> Chevrolet Camaro </a>
-        <p>There are many <b>variations</b> of passages of Lorem Ipsum available,
-           but the majority have suffered alteration in some form, by injected humour
-           or randomised words which don't look even slightly believable.
-           If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-           anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-           tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-           It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-           to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
-           injected humour, or non-characteristic words etc.</p>
-        <ol>
-          <li>Primul element</li>
-          <li>Al doilea element</li>
-          <li>Al treilea element</li>
-      
-        </ol>
-        <section>
-          <h3>Titlu subsectiune</h3>
-        </section><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-      </section>
-    <section id ="s2">
-      <h2>Capitol 2</h2>
-      <figure>
-        <picture>
-         <source srcset = "./resurse/imagini/cainemic.jpg" media = "(max-width:700px)"/>
-         <source srcset = "./resurse/imagini/cainemare.jpg" media = "(max-width:1200px)"/>
-       <img src = "./resurse/imagini/caine.jpg" alt = "text alternativ">
-       </picture>
-       <figcaption>Descriere imagine</figcaption>
-       
-      </figure>
-      <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
-        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-        Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-        consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
-        undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-        (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
-        very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    </section>  
+      <div class="container" style = "color:#FFFFFF">
+        <section id="usa">
+          <h2>USA</h2>
+          <a href = https://www.youtube.com/embed/KTYVwEgl59Y target = "1iframe" style = "color:#FFFFFF"> Primul videoclip cu masini din America:</a>
+            <br>
+          <a href = https://www.youtube.com/embed/gUuzOvx6M7o target = "1iframe" style = "color:#FFFFFF"> Al Doilea videoclip cu masini din America:</a>
+            <br>
+            <br>
+          <iframe src = "https://www.youtube.com/embed/KTYVwEgl59Y" width="560" height="315" name = "1iframe" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+          <a href = "https://www.hotcars.com/fastest-american-cars-ever/" style = "color:#FFFFFF"> Un articol in limba engleza despre masinile din america</a>
+            <br>
+          <p><b>America</b> este cea mai buna la facut <i>muscle cars</i>. Dictionarul Britanica defineste <i>muscle cars ca fiind </i> <q>an American-made two-door sports car with a powerful engine </q>. Muscle cars au de obicei motoare mari si se folosesc de un <i> supercharger </i> pentru a compresa aerul astfel formandu-se o explozie mai puternica. Puteti descarca o imagine cu un <a href = "./Assets/Images/Camaro.jpeg" download style = "color:#FFFFFF"> Chevrolet Camaro </a> de aici. Camaro este una dintre cele mai cunoscute masini din America.</p>
+          <p>Aceasta este o lista cu Producatorii principali de masini din america si cand au fost fondati:</p>
+          <ol>
+            <li>
+              <details>
+                <summary>Chevrolet</summary>
+                  Fondat in 1911.
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Dodge</summary>
+                  Fondat in  1900.
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Ford</summary>
+                  Foundat in 1903.
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Plymouth</summary>
+                  Foundat in 1928.
+              </details>
+            </li>
+          </ol>
+          <figure>
+            <picture>
+              <source srcset = "./Assets/Images/muscleCars-Small.jpg" media = "(max-width:750px)"/>
+              <source srcset = "./Assets/Images/muscleCars-Medium.jpg" media = "(max-width:1000px)"/>
+              <img src = "./Assets/Images/muscleCars-Big.jpg" alt = "Imaginea nu a putut fii incarcata">
+            </picture>
+            <figcaption>Muscle Cars</figcaption> 
+          </figure>
+          <section>
+            <h3>Chevrolet</h3>
+            <p>Marca Chevrolet a aparut odata cu ideea unui sofer de curse, numit Louis Chevrolet. Compania Chevrolet a avut un succes insemnat si un impact imens in industria automobilelor din <b> Statele Unite ale Americii </b> in perioada anilor 1950-1960, fapt demonstrat de o statistica din anul 1963 care arata faptul ca 3 din 10 masini vandute in America era un Chevrolet. Aceasta marca si-a facut intrarea si in Europa, insa dupa apropape un secol.</p>
+          </section>
+        </section>
+      <section id ="Germany">
+        <h2>Germania</h2>
+        <a href = https://www.youtube.com/embed/nHJHZUPy1So target = "2iframe" style = "color:#FFFFFF"> Primul videoclip cu masini din Germania:</a>
+            <br>
+        <a href = https://www.youtube.com/embed/UDXqSauAB6w target = "2iframe" style = "color:#FFFFFF"> Al Doilea videoclip cu masini din Germania:</a>
+        <br>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nHJHZUPy1So" name = "2iframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <a href = "https://www.goodwood.com/grr/road/news/2020/12/the-eight-best-german-cars-to-buy-in-2021/" style = "color:#FFFFFF"> Un articol in limba engleza despre masinile din Germania</a>
+          <br>
+        <p><b> Germania </b> este o tara producatoare de masini pentru care viteza nu este scopul, siguranta este. Acestia prefera ca masina sa nu aiba un aspect de masina rapida insa sa fie, spre exemplu <a href = "./Assets/Images/audoSQ5.jpg" download style = "color:#FFFFFF"> audo SQ5 </a> care desii pare a fii masina inceata (din cauza greutatii) aceasta este capabila sa atinga o viteza de 250 km/h.</p>
+        <p>Aceasta este o lista cu Producatorii principali de masini din america si cand au fost fondati:</p>
+          <ol>
+            <li>
+              <details>
+                <summary>Bmw</summary>
+                  Foundat in 1916.
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Volkswagen</summary>
+                  Foundat in 1937.
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Audi</summary>
+                  Foundat in 1909.
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Mercedes-Benz</summary>
+                  Foundat in 1926.
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Porche</summary>
+                  Foundat in 1931.
+              </details>
+            </li>
+          </ol>
+          <figure>
+            <picture>
+              <source srcset = "./Assets/Images/muscleCars-Small.jpg" media = "(max-width:750px)"/>
+              <source srcset = "./Assets/Images/muscleCars-Medium.jpg" media = "(max-width:1000px)"/>
+              <img src = "./Assets/Images/muscleCars-Big.jpg" alt = "Imaginea nu a putut fii incarcata">
+            </picture>
+            <figcaption>Muscle Cars</figcaption> 
+          </figure>
+          <section>
+            <h3>Volkswagen</h3>
+            <p>Povestea Volkswagen incepe odata cu regimul nazist care a fondat aceasta companie in scopul fabricarii unei masini ieftine pe care sa o poata achizitiona categoriile sociale cu venituri mici. Numele acestei marci reflecta scopul, volkswagen traducandu-se <i> masina a poporului </i> . Primul model creat si produs de companie a fost <i> VW Kafer </i> tradus <i> VW Gandac </i> conform planurilor renumitului constructor Ferdinand Porsche. Dupa al doilea Razboi Mondial, VW s-a dezvoltat considerabil in toata Europa. In prezent, aceasta companie germana este ca marime al treilea constructor de masini la nivel mondial, remarcandu-se cu modele precum: VW Passat, VW Golf, VW Bora, VW Touran, VW Polo, VW Lupo, VW Tiguan, etc.  </p>
+          </section>
+      </section>  
     </main>
+  </div>
     <footer>
-    	<a href = "#mainTop">Back to the beginning of the page</a> 
+      <a href = "#mainTop">Back to the beginning of the page</a> 
+        <br>
+      <a href = "tel:123-456-7890">123-456-7890</a>
+        <br>
+      <a href = "http://maps.google.com/?q=1200PennsylvaniaAveSE,Washington,DistrictofColumbia,20003">Open maps</a>
+        <br>
+      <a href = "mailto:example@example.com">Send us an E-mail</a>  
+        <br>
+      <a href = "https://wa.me/123-456-7890">Text us</a>
+        <br>
+      <small>&copy;<time datetime="2022-03-04">2022 Toate Drepturile Rezervate</time></small>
     </footer>
 
   </body>
