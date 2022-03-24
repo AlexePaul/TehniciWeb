@@ -10,6 +10,7 @@ footer{
 section.country{
 	padding-right: 100px;
 }
+
 figure{
 	margin:  0;
 }
@@ -22,8 +23,8 @@ display: grid;
 width: 95%;
 margin: auto;
 grid-template-areas: 
-"z-usa z-germany"
-"z-japan z-romania";
+'z-usa z-germany'
+'z-japan z-japan';
 grid-template-columns: 1fr 1fr;
 }
 
@@ -39,8 +40,9 @@ ul.menu ul{
 	right: var(--menu-border-size);
 }
 
-#romania{
-	grid-area: z-romania;
+footer{
+	margin: 50px;
+	margin-top: 100px;
 }
 
 #usa{
@@ -54,7 +56,6 @@ ul.menu ul{
 }
 nav{
 	padding: 10px;
-	margin-left: 50px;
 	margin: auto;
 	display: block;
 	width: 95%;
@@ -66,7 +67,7 @@ ul.menu li{
 	border: var(--menu-border-size) solid #334A23;
 	height: 30px;
 	background:  #8FABE8;
-	width: 100px;
+	width: 100%;
 	text-align: center;
 	line-height: 30px;
 	font-size: var(--nav-Text-size);
