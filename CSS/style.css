@@ -1,13 +1,21 @@
 body{
+	margin: 0;
 	--menu-border-size: 1px;
 	--nav-Text-size: 15px;
+	counter-reset: section;
 }
 
 footer{
-	margin-top: 50px;
+	background: #471529;
+	margin-top: 200px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	text-align: center;
+
 }
 
 section.country{
+	margin: 15px;
 	padding-right: 100px;
 }
 
@@ -18,14 +26,41 @@ figure{
 figure picture img{
 	width: 100%;
 }
+
+h1.title{
+	color: white; 
+	margin-left: 50px;
+	animation : titleanim 5s linear infinite;
+}
+
+@keyframes titleanim{
+	0%{
+		color: rgb(255, 0, 0);
+	}
+	33%{
+		color: rgb(0,255,0);
+	}
+	66%{
+		color: rgb(0,0,255);
+	}
+	100%{
+		color: rgb(255,0,0);
+	}
+}
+
 .container{
 display: grid;
 width: 95%;
 margin: auto;
 grid-template-areas: 
-'z-usa z-germany'
-'z-japan z-japan';
+"z-usa z-germany"
+"z-japan z-japan";
 grid-template-columns: 1fr 1fr;
+}
+
+.container>section>h2::before{
+	counter-increment: section;
+	content: counter(section)". ";
 }
 
 ul.menu{
@@ -38,11 +73,6 @@ nav ul{
 ul.menu ul{
 	position:  relative;
 	right: var(--menu-border-size);
-}
-
-footer{
-	margin: 50px;
-	margin-top: 100px;
 }
 
 #usa{
@@ -95,6 +125,7 @@ ul.menu ul li a:hover{
 }
 
 ul.menu li:hover{
+	font-size: 1.1em;
 	background: #3EABE8;
 	transition: all 0.2s ease-in;
 }
@@ -107,7 +138,15 @@ ul.menu li:hover{
 		display: none;
 }
 
+iframe{
+	
+}
+
 @media screen and (max-width: 750px){
+
+	iframe{
+		width: 100%;
+	}
 
 	ul.menu{
 		display: none;
@@ -132,11 +171,18 @@ ul.menu li:hover{
 	.container{
 	grid-template-areas: 
 	"z-usa" 
-	"z-germany";
+	"z-germany"
+	"z-japan";
 	grid-template-columns: 1fr;
 	}
 }
 
-ul.menu li:hover{
-	font-size: 1.1em;
-}   
+@media screen and (max-width:  1500px){
+	.container{
+	grid-template-areas: 
+	"z-usa" 
+	"z-germany"
+	"z-japan";
+	grid-template-columns: 1fr;
+	}
+}
