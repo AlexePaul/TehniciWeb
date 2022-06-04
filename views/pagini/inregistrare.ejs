@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "ro" id = "mainTop">
+  <head>
+    <meta charset ="UTF-8">
+    <meta name ="keywords" content="masini, motoare, bmw, mercedes, dodge">
+    <meta name = "description" content ="Un site despre masini cu motoare puternice de la diferiti producatori precum bmw, mercedes sau dodge">
+    <meta name = "author" content ="Alexe Paul">
+
+    <title>CarStats</title>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="Assets/ico/site.webmanifest">
+    <link rel="mask-icon" href="Assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="Assets/ico/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="Assets/ico/browserconfig.xml">
+    <link rel="stylesheet" href="./CSS/style.css">    
+    <meta name="theme-color" content="#ffffff"> 
+  </head>
+  <%- include("../fragmente/header.ejs") %>
+  <body style = "background-color: #6E213E">    
+    <main>
+        <% if(!locals.raspuns) { %>           
+        <form method="post" action="/inregistrare">                
+            <label> Username: <input type="text" name="username" required /> </label>
+            <br/>                
+            <label> Parola: <input type="password" name="parola" required /> </label>  
+            <br/>                              
+            <label> E-mail: <input type="text" name="email"  /> </label>
+            <br/>           <input type="submit" value="Trimite">                
+                            <input type="reset" value="Reset">            
+        </form>            
+        <% } else  { %>                
+            <p>Date introduse!</p>            
+        <% } %>
+    </main>
+    
+    <%- include("../fragmente/footer.ejs") %>
+  </body>
+
+</html>
