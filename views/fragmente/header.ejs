@@ -1,3 +1,4 @@
+<% if(!locals.utilizator) { %>
 <header>
     <h1 class = "title">Car Stats</h1>
     <nav>
@@ -13,7 +14,28 @@
           </ul>
         </li>
         <li><a href = "/inregistrare">Inregistrare</a></li>
-        <li><a href = "/pagina3">pagina3</a></li>
+        <li><a href = "/login">Log In</a></li>
       </ul>
     </nav>
-  </header>
+</header>
+<% } else { %>
+<header>
+    <h1 class = "title">Car Stats</h1>
+    <nav>
+      <input type="checkbox" id="chk-menu" style="display:none">
+      <label id = "labelCheckbox" for="chk-menu"><img src = "./Assets/Images/Hamburger_icon_alb.png" style = "width:50px; height:50px" alt= "imaginea nu a putut fi incarcata"></label>
+      <ul class="menu">
+        <li><a href = "/index">Acasa</a></li>
+        <li>Tara
+          <ul>
+            <li><a href ="/index#usa">USA</a></li>
+            <li><a href ="/index#Germany">Germania</a></li>
+            <li><a href ="/index#Japan">Japonia</a></li>
+          </ul>
+        </li>
+        <li><%- locals.utilizator.username %></li>
+        <li><a href = "/Logout">Log Out</a></li>
+      </ul>
+    </nav>
+</header>
+<% } %>

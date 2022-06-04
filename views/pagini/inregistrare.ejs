@@ -22,19 +22,21 @@
   <%- include("../fragmente/header.ejs") %>
   <body style = "background-color: #6E213E">    
     <main>
-        <% if(!locals.raspuns) { %>           
-        <form method="post" action="/inregistrare">                
-            <label> Username: <input type="text" name="username" required /> </label>
-            <br/>                
-            <label> Parola: <input type="password" name="parola" required /> </label>  
-            <br/>                              
-            <label> E-mail: <input type="text" name="email"  /> </label>
-            <br/>           <input type="submit" value="Trimite">                
-                            <input type="reset" value="Reset">            
-        </form>            
-        <% } else  { %>                
-            <p>Date introduse!</p>            
-        <% } %>
+        <div id="centerDiv">
+            <% if(!locals.raspuns) { %>           
+            <form id = "formInregistrare" method="post" action="/inregistrare">                
+                <label> Username: <br/> <input type="text" name="username" required /> </label>
+                <br/>                
+                <label> Parola: <br/> <input type="password" name="parola" required /> </label>  
+                <br/>                              
+                <label> E-mail: <br/> <input type="text" name="email"  /> </label>
+                <br/>           <input type="submit" value="Trimite">                
+                                <input type="reset" value="Reset">            
+            </form>            
+            <% } else  { %>                
+                <p>Date introduse!</p>            
+            <% } %>
+        </div>
     </main>
     
     <%- include("../fragmente/footer.ejs") %>

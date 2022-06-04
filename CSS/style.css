@@ -138,9 +138,16 @@ ul.menu li:hover{
 		display: none;
 }
 
-iframe{
-	
+#centerDiv{
+	text-align: center;
 }
+
+#formInregistrare{
+	margin: auto;
+	color: white;
+	width: 50vw;
+}
+
 
 @media screen and (max-width: 750px){
 

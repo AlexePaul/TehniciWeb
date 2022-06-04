@@ -19,10 +19,12 @@
     <link rel="stylesheet" href="./CSS/style.css">    
     <meta name="theme-color" content="#ffffff"> 
   </head>
-  <%- include("../fragmente/header.ejs", {utilizator:locals.utilizator}) %>
+  <%- include("../fragmente/header.ejs") %>
   <body style = "background-color: #6E213E">    
     <main>
-        <h2> Error 404 </h2>
+        <div id="centerDiv">
+            <p>Deconectat cu Success </p>
+        </div>
     </main>
     
     <%- include("../fragmente/footer.ejs") %>

@@ -19,10 +19,23 @@
     <link rel="stylesheet" href="./CSS/style.css">    
     <meta name="theme-color" content="#ffffff"> 
   </head>
-  <%- include("../fragmente/header.ejs", {utilizator:locals.utilizator}) %>
+  <%- include("../fragmente/header.ejs") %>
   <body style = "background-color: #6E213E">    
     <main>
-        <h2> Error 404 </h2>
+        <div id="centerDiv">
+            <% if(!locals.raspuns) { %>           
+            <form id = "formInregistrare" method="post" action="/login">                
+                <label> Username: <br/> <input type="text" name="username" required /> </label>
+                <br/>                
+                <label> Parola: <br/> <input type="password" name="parola" required /> </label>  
+                <br/>                              
+                <br/>           <input type="submit" value="Trimite">                
+                                <input type="reset" value="Reset">            
+            </form>            
+            <% } else  { %>                
+                <p>Date introduse!</p>            
+            <% } %>
+        </div>
     </main>
     
     <%- include("../fragmente/footer.ejs") %>
